@@ -1,13 +1,13 @@
 import React from 'react';
+import NavBar from '../NavBar';
 
 import { Container, Wrapper } from './styles';
 
 const Layout: React.FC = () => {
   return (
     <Container>
-      <Wrapper>
-        <h1>ok</h1>
-      </Wrapper>
+      <NavBar />
+      <Wrapper />
     </Container>
   );
 };
