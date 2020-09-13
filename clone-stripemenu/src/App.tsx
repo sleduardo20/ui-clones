@@ -1,11 +1,14 @@
 import React from 'react';
+import Layout from './components/Layout';
+import GlobalStyles from './styles/GlobalStyles';
 
-
-
-const  App: React.FC =()=> {
+const App: React.FC = () => {
   return (
-    <h1>World, hold on</h1>
+    <>
+      <Layout />
+      <GlobalStyles />
+    </>
   );
-}
+};
 
 export default App;
