@@ -29,7 +29,7 @@
       "import/prefer-default-export": "off",
       "react/jsx-one-expression-per-line": "off",
       "no-unused-expressions":"off",
-      "@typescript-eslint/no-unused-expressions": ["error"],
+      
   
       "react/jsx-props-no-spreading": "off",
       "react/prop-types": "off",
