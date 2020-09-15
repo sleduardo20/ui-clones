@@ -15,6 +15,7 @@ export function useDimensions(responsive = true) {
           setDimensions(getDimensions(element));
         });
       };
+
       updateDimensions();
 
       if (responsive) {
@@ -25,7 +26,7 @@ export function useDimensions(responsive = true) {
         };
       }
     }
-  }, []);
+  }, [element, hook, responsive]);
 
-  return [hook, element, dimensions];
+  return [hook, dimensions, element];
 }

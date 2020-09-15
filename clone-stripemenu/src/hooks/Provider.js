@@ -2,7 +2,7 @@ import React, {
   createContext, useCallback, useEffect, useState,
 } from 'react';
 
-const Context = createContext();
+export const Context = createContext();
 
 export function DropdownProvider({ children }) {
   const [options, setOptions] = useState([]);
@@ -13,7 +13,7 @@ export function DropdownProvider({ children }) {
     id,
     optionDimensions,
     optionCenterX,
-    wrappedContent,
+    WrappedContent,
     backgroundHeight,
   }) => {
     setOptions((items) => [
@@ -22,7 +22,7 @@ export function DropdownProvider({ children }) {
         id,
         optionDimensions,
         optionCenterX,
-        wrappedContent,
+        WrappedContent,
         backgroundHeight,
       },
     ]);
@@ -33,6 +33,7 @@ export function DropdownProvider({ children }) {
       if (item.id === optionId) {
         item = { ...item, ...props };
       }
+
       return item;
     }));
   }, [setOptions]);
@@ -53,7 +54,15 @@ export function DropdownProvider({ children }) {
 
   return (
     <Context.Provider value={{
-      registerOption, updateOptionsProps, getOptionById, deleteOptionById,
+      registerOption,
+      updateOptionsProps,
+      getOptionById,
+      deleteOptionById,
+      options,
+      targetId,
+      setTargetId,
+      cachedId,
+      setCachedId,
     }}
     >
       {children}

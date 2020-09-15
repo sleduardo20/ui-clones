@@ -1,2 +1,2 @@
-export { DropdownProvider } from './Provider';
+export { DropdownProvider, Context } from './Provider';
 export { useDimensions } from './Dimensions';
