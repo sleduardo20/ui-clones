@@ -66,12 +66,28 @@ export function DropdownOption({ name, content: Content, backgroundHeight }) {
 
   ]);
 
+  const handleOpen = () => setTargetId(id);
+  const handleClose = () => setTargetId(null);
+  const handleTouch = () => (window.isMobile = true);
+
+  const handleClick = (e) => {
+    e.preventDefault();
+
+    return targetId === id ? handleClose() : handleOpen();
+  };
+
   return (
     <>
       <motion.button
         className="dropdown-option"
         type="button"
         ref={optionsHook}
+        onMouseDown={handleClick}
+        onHoverStart={() => !window.isMobile && handleOpen()}
+        onHoverEnd={() => !window.isMobile && handleClose()}
+        onTouchStart={handleTouch}
+        onFocus={handleOpen}
+        onBlur={handleClose}
       >
         {name}
       </motion.button>

@@ -24,7 +24,22 @@ export const DropdownStyles = styled.div`
   &:hover,&:focus{
     opacity: 0.55;
   }
+}
 
+.dropdown-root {
+  z-index: 10;
+  position: absolute;
+}
+
+.dropdown-arrow {
+
+}
+.dropdown-container{
+position: absolute;
+}
+
+.dropdown-section {
+  position: absolute;
 }
 
 `;

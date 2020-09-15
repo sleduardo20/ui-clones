@@ -4,6 +4,8 @@ import { DropdownProvider } from '../../hooks';
 
 import { Products, Developers, Company } from '../Content';
 import { DropdownOption } from '../Dropdown';
+import DropdownRoot from '../DropdownRoot';
+
 import { Container, DropdownStyles } from './styles';
 
 function NavBar() {
@@ -24,6 +26,8 @@ function NavBar() {
             </li>
           </ul>
         </Container>
+
+        <DropdownRoot />
       </DropdownStyles>
 
     </DropdownProvider>
