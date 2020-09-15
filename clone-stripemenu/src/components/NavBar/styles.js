@@ -36,6 +36,9 @@ export const DropdownStyles = styled.div`
 }
 .dropdown-container{
 position: absolute;
+overflow: hidden;
+box-shadow: -3px -3px 5px rgba(82,95,127, 0.04);
+background: #fff;
 }
 
 .dropdown-section {
