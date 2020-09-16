@@ -64,8 +64,37 @@ function DropdownRoot() {
           {options.map((item) => (<DropdownSection key={item.id} option={item} />))}
         </motion.div>
       </motion.div>
+        
+      <DropdownArrow isFisrtIterection={isFisrtIterection} />
     </div>
   );
 }
 
 export default DropdownRoot;
+
+function DropdownArrow({isFisrtIterection}){
+  const {cachedId, getOptionById} = useContext(Context);
+  
+  const cachedOption = useMemo(() => getOptionById(cachedId),
+  [cachedId, getOptionById]);
+
+  const x = cachedOption ? cachedOption.optionCenterX : 0;
+  
+  return(
+    <motion.div 
+      className="dropdown-arrow"
+      initial={{
+        opacity: 0,
+      }}
+      animate={{
+        x,
+        pointerEvents: 'none',
+        opacity: x > 0 ? 1 : 0,
+      }}
+      transition={{
+        ease: 'easeOut',
+        x: {duration: isFisrtIterection ? 0 : .22},
+      }}
+    />
+  )
+}
