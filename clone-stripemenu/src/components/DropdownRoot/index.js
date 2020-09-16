@@ -1,4 +1,4 @@
-import React, { useContext, useMemo, useState } from 'react';
+import React, { useContext, useEffect, useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 
 import { Context } from '../../hooks';
@@ -32,9 +32,36 @@ function DropdownRoot() {
       if(!hasInterected) setHasInterected(true);
     }, 15);
   }
+
+  useEffect(()=>{
+    if(isActive) return;
+
+    let timeOut = setTimeout(() => 
+      setHasInterected(false),
+      .22 * 1000 * 0.9
+    );
+
+    return () => clearTimeout(timeOut);
+
+
+  },[isActive])
   
   return (
-    <div className="dropdown-root">
+    <div style={{perspective: 2000}}>
+    
+    <motion.div 
+      className="dropdown-root"
+      animate={{
+        opacity: isActive? 1 : 0,
+        rotateX: isActive? 0 : -15,
+        
+      }}
+      transition={{
+        opacity:{duration: .22, delay: 0.05},
+        rotateX:{duration: .22, delay: 0.05},
+      }}
+      >
+      
       <motion.div
         className="dropdown-container"
         animate={{
@@ -66,7 +93,8 @@ function DropdownRoot() {
       </motion.div>
         
       <DropdownArrow isFisrtIterection={isFisrtIterection} />
-    </div>
+    </motion.div>
+  </div>
   );
 }
 
