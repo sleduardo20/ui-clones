@@ -16,13 +16,13 @@ function NavBar() {
         <Container>
           <ul>
             <li>
-              <DropdownOption name="Produtos" content={Products} />
+              <DropdownOption name="Produtos" content={Products} backgroundHeight={286} />
             </li>
             <li>
-              <DropdownOption name="Desenvolvedores" content={Developers} />
+              <DropdownOption name="Desenvolvedores" content={Developers} backgroundHeight={167} />
             </li>
             <li>
-              <DropdownOption name="Empresa" content={Company} />
+              <DropdownOption name="Empresa" content={Company} backgroundHeight={215} />
             </li>
           </ul>
         </Container>
