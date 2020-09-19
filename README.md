@@ -17,10 +17,7 @@ O React é framework Javascript de código aberto criado e mantido pelo Facebook
 </br>
 E por ser esse framework tão gostoso de desenvolver que estou praticando e criando alguns clones de outros sites, confira logo abaixo.
 </br>
-</br>
 
-</br>
-</br>
 <p>Clone GitHub</p>
 </br>
 <p align="center">
