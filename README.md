@@ -19,6 +19,38 @@ E por ser esse framework tão gostoso de desenvolver que estou praticando e cria
 </br>
 </br>
 
+</br>
+</br>
+<p>Clone GitHub</p>
+</br>
+<p align="center">
+<img style="-webkit-user-select: none;margin: auto;" src="https://raw.githubusercontent.com/sleduardo20/ui-clones/master/gifs/cloneGitHub.gif">
+</p>
+
+</br>
+</br>
+<p>Clone Menu do Stripe</p>
+</br>
+<p align="center">
+<img style="-webkit-user-select: none;margin: auto;cursor: zoom-in;" src="https://raw.githubusercontent.com/sleduardo20/ui-clones/master/gifs/cloneMenuStripe.gif" width="513" height="416">
+</p>
+
+</br>
+</br>
+<p>Clone Mercado Livre</p>
+</br>
+<p align="center">
+<img src="/sleduardo20/ui-clones/blob/master/gifs/cloneMercadoLivre.gif?raw=true" alt="cloneMercadoLivre.gif">
+</p>
+
+</br>
+</br>
+<p>Clone Twetter</p>
+</br>
+<p align="center">
+<img src="/sleduardo20/ui-clones/blob/master/gifs/cloneTwitter.gif?raw=true" alt="cloneTwitter.gif">
+</p>
+
 
 ## 🔧 Instalação
 
