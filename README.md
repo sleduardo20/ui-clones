@@ -1,6 +1,6 @@
 <h1 align="center">UI Clones</h1>
 
-<p align="center"> Repositório criado com objetivo da prática deliberada para aprimorar as habilidades de desenvoldimento web React JS
+<p align="center"> Repositório criado com objetivo da prática deliberada para aprimorar as habilidades de desenvolvimento web React JS
     <br> 
 </p>
 
