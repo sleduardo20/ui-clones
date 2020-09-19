@@ -1,10 +1,6 @@
 <h1 align="center">UI Clones</h1>
 
-
-
----
-
-<p align="center"> Repositório criado com objetivo de criar clones de interfaces web em React JS
+<p align="center"> Repositório criado com objetivo da prática deliberada para aprimorar as habilidades de desenvoldimento web React JS
     <br> 
 </p>
 
@@ -16,6 +12,8 @@ O React é framework Javascript de código aberto criado e mantido pelo Facebook
 </br>
 </br>
 E por ser esse framework tão gostoso de desenvolver que estou praticando e criando alguns clones de outros sites, confira logo abaixo.
+
+</br>
 </br>
 
 <p>Clone GitHub</p>
